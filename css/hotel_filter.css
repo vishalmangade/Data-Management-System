@@ -1,0 +1,83 @@
+#open_technology {
+    font-weight: bold;
+  }
+  
+  .filterbtn {
+    text-align: left;
+  }
+  
+  #title_filterbar {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #hrms_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #ats_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #crm_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #erp_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #pos_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #rms_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #cm_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #pms_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #ibe_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #crs_option {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  
+  
+  #country_option
+  {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #state_option
+  {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  #city_option
+  {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  

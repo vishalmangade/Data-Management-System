@@ -1,0 +1,23 @@
+th {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  td {
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  
+  thead {
+    background-color: rgba(77, 5, 232, 1);
+    color: white;
+  }
+  table {
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  body {
+    background-color: rgb(243, 245, 245);
+  }
+  
