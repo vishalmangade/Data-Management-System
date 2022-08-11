@@ -1,9 +1,9 @@
 <?php
-// session_start();
-// session_regenerate_id();
-// if (!isset($_SESSION['isLogin']) && $_SESSION['isLogin'] != true ) {
-//     header("Location: ../dashboard/php/logout.php");
-// }
+session_start();
+session_regenerate_id();
+if (!isset($_SESSION['isLogin']) && $_SESSION['isLogin'] != true ) {
+    header("Location:  dashboard/php/logout.php");
+}
 
 ?>
 <?php include "includes/dbconnect.php"; ?>
@@ -53,7 +53,7 @@ if (isset($_POST['action'])) {
   <link rel="stylesheet" href="css/insert_form.css">
 
 
-  <title>Data Management System - Hotel</title>
+  <title>Data Management System</title>
 </head>
 
 <body>
@@ -126,7 +126,7 @@ if (isset($_POST['action'])) {
           <tbody id="result">
 
             <?php
-            $sql = "SELECT * FROM `hotel`";
+            $sql = "SELECT * FROM `hotel` where status = 1";
             $result = mysqli_query($conn, $sql);
             $sno = 0;
             while ($row = mysqli_fetch_assoc($result)) {
@@ -192,7 +192,7 @@ if (isset($_POST['action'])) {
         <form action="php/hotel_ajax.php" method="Post">
           <div class="form-group">
             <input type="hidden" name="table_data" id="data_containt">
-            <input type="submit" class="form-control btn btn-success" name="generate_report" value="Generate Report">
+            <input type="submit" id="generare_report-download-btn" class="form-control btn btn-success" name="generate_report" value="Generate Report">
         </form>
       </div>
       <div id="generare_report-close-btn">X</div>
@@ -206,7 +206,7 @@ if (isset($_POST['action'])) {
       <hr>
       <form action="php/hotel_ajax.php" method="Post">
         <div class="form-group">
-          <input type="submit" class="form-control btn btn-success" name="download_data" value="Download All Data">
+          <input type="submit" id="download_data-download-btn" class="form-control btn btn-success" name="download_data" value="Download All Data">
         </div>
       </form>
       <div id="download_data-close-btn">X</div>
@@ -411,11 +411,11 @@ if (isset($_POST['action'])) {
 
       <div class="card mb-4" style="width: 100%;">
         <div class="text-center mt-3">
-          <img style="width: 10%;" src="resource/img/excel.png" class="card-img-top " alt="...">
+          <img style="width: 10%;" src="resources/img/excel.png" class="card-img-top " alt="...">
         </div>
         <div class="card-body">
           <h5 class="card-title text-center">Download Format File</h5>
-          <a href="resource/excel/hotels.xlsx" download class="btn btn-success stretched-link downloadable" style="width: 100%;">Donwload File</a>
+          <a href="resources/excel/hotel.xlsx" download class="btn btn-success stretched-link downloadable" style="width: 100%;">Donwload File</a>
         </div>
       </div>
 
@@ -509,7 +509,7 @@ if (isset($_POST['action'])) {
         var data_id = $(this).data("id");
         var element = this;
         var dlt_action = "delete";
-        var conf = confirm("Dou want to delete this permanently");
+        var conf = confirm("Dou want to delete this data?");
 
         if (conf == true) {
           $.ajax({
@@ -520,11 +520,11 @@ if (isset($_POST['action'])) {
               dlt_action: dlt_action
             },
             success: function(data) {
-              if (data == 1) {
+              if (data) {
                 $(element).closest("tr").fadeOut();
                 location.reload();
               } else {
-                alert("Could not delete");
+                alert("Something went wrong" + data); // if data is not deleted
               }
             }
           });
@@ -541,6 +541,11 @@ if (isset($_POST['action'])) {
         $("#data_containt").val(response);
       });
 
+      // generate report hide modal after downloading
+      $(document).on("click", "#generare_report-download-btn", function(e) {
+        $("#generare_report-modal").hide();
+      })
+
       // generate report hide modal 
       $(document).on("click", "#generare_report-close-btn", function(e) {
         $("#generare_report-modal").hide();
@@ -552,6 +557,12 @@ if (isset($_POST['action'])) {
         $("#download_data-modal").show();
         var download = "formfill";
       });
+
+      // download all data hide modal after donloading
+      $(document).on("click", "#download_data-download-btn", function(e) {
+        $("#download_data-modal").hide();
+      })
+
 
       // download all data hide modal 
       $(document).on("click", "#download_data-close-btn", function(e) {
@@ -693,10 +704,10 @@ if (isset($_POST['action'])) {
           },
 
           success: function(data) {
-            if (data == 1) {
+            if (data) {
               $("#modal").hide();
               location.reload();
-            } else alert(data);
+            } else alert("something went wrong" + data);
           }
         });
       });

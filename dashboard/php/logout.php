@@ -1,0 +1,11 @@
+<?php
+session_start();
+unset($_SESSION['isLogin']);
+unset($_SESSION['title']);
+unset($_SESSION['status']);
+unset($_SESSION['emp_id']);
+unset($_SESSION['name']);
+unset($_SESSION['email']);
+session_destroy();
+header("location:../../");
+die();

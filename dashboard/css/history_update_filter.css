@@ -1,0 +1,23 @@
+.filterbtn {
+  text-align: left;
+}
+
+#industry_filterbar,
+#column_name_filterbar,
+#updated_by_filterbar,
+#date_filterbar {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+th{
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 13px
+}
+
+td {
+  font-size: 12px;
+  white-space: nowrap;
+  font-weight: bold;
+}

@@ -1,5 +1,5 @@
 <?php
-include "dbconnect.php";
+include "../includes/dbconnect.php";
 
 session_start();
 session_regenerate_id();
@@ -94,6 +94,8 @@ if (isset($_POST['action'])) {
   $to = $_POST['to'];
   $sql .= "AND number_of_rooms <= " . $to . " ";
 
+  $sql .= "AND status = 1 ";
+
 
 
 
@@ -156,18 +158,31 @@ if (isset($_POST['action'])) {
   echo $output;
 }
 
-// dalete data 
+// dalete data from home page
 
 if (isset($_POST['dlt_action'])) {
   $id = $_POST['data_id'];
-  $sql2 = "DELETE FROM hotel WHERE data_id = {$id} ";
+  $sql2 = "UPDATE hotel SET hotel.status = 0 WHERE data_id = {$id} ";
   $result2 = mysqli_query($conn, $sql2);
   if ($result2) {
-    echo 1;
+    echo true;
   } else {
-    echo 0;
+    echo mysqli_error($conn);
   }
 }
+
+// delete data from database permonently
+
+if (isset($_POST['dlt_action'])) {
+    $id = $_POST['data_id'];
+    $sql2 = "DELETE FROM hotel WHERE data_id = {$id} ";
+    $result2 = mysqli_query($conn, $sql2);
+    if ($result2) {
+      echo 1;
+    } else {
+      echo mysqli_error($conn);
+    }
+  }
 
 // return data in form for update 
 
@@ -543,9 +558,9 @@ if (isset($_POST['update'])) {
 
   $result4 = mysqli_query($conn, $sql4);
   if ($result4) {
-    echo 1;
+    echo true;
   } else {
-    echo 0;
+    echo mysqli_error($conn);
   }
 }
 
@@ -586,7 +601,7 @@ if (isset($_POST['insert-submit'])) {
   $alexa_rank = mysqli_real_escape_string($conn, $_POST['insert-alexa']);
   $monthly_visitor = mysqli_real_escape_string($conn, $_POST['insert-visitors']);
 
-  $sql5 = "INSERT INTO hotel (hrms,ats,crm,erp,pos,rms,cm,pms,ibe,crs,hotel_name,website,country,street,city,hotel.state,zipcode,prefix,first_name,last_name,title,email,contact_number,number_of_rooms, hotel_class, adr, services,type_of_hotel,hotel.ownership,chain_name,facebook_url,alexa_rank,monthly_visitor) VALUES ('$hrms','$ats','$crm' ,'$erp','$pos','$rms','$cm','$pms','$ibe','$crs','$hotel_name','$website','$country','$street','$city','$state','$zipcode','$prefix','$first_name','$last_name','$title','$email','$contact_number','$number_of_rooms','$hotel_class','$adr','$services','$type_of_hotel','$ownership','$chain_name','$facebook_url','$alexa_rank','$monthly_visitor');";
+  $sql5 = "INSERT INTO hotel (status,hrms,ats,crm,erp,pos,rms,cm,pms,ibe,crs,hotel_name,website,country,street,city,hotel.state,zipcode,prefix,first_name,last_name,title,email,contact_number,number_of_rooms, hotel_class, adr, services,type_of_hotel,hotel.ownership,chain_name,facebook_url,alexa_rank,monthly_visitor) VALUES (1,'$hrms','$ats','$crm' ,'$erp','$pos','$rms','$cm','$pms','$ibe','$crs','$hotel_name','$website','$country','$street','$city','$state','$zipcode','$prefix','$first_name','$last_name','$title','$email','$contact_number','$number_of_rooms','$hotel_class','$adr','$services','$type_of_hotel','$ownership','$chain_name','$facebook_url','$alexa_rank','$monthly_visitor');";
 
   $added_by = mysqli_real_escape_string($conn, $_SESSION['emp_id']);
 
@@ -596,7 +611,7 @@ if (isset($_POST['insert-submit'])) {
 
   $result5 = mysqli_query($conn, $sql5);
   if ($result5) {
-    echo header('Location:../hotels.php');
+    echo header('Location:../data.php');
   } else {
     echo "Something Went Wrong.Please Contact IT team.";
   }
@@ -759,9 +774,11 @@ if (isset($_POST['add_person_formfill'])) {
 
 
 if (isset($_POST["bulk_upload"])) {
+    echo "vishal111";
   // required library files 
-  require "../lib/PHPExcel/PHPExcel.php";
-  require "../lib/PHPExcel/PHPExcel/IOFactory.php";
+  include "../lib/PHPExcel/PHPExcel.php";
+  include "../lib/PHPExcel/PHPExcel/IOFactory.php";
+  echo "vishal";
 
   $ext = pathinfo($_FILES['data_file']['name'], PATHINFO_EXTENSION);
   if ($ext == "xlsx") {
@@ -806,6 +823,8 @@ if (isset($_POST["bulk_upload"])) {
         $alexa_rank = mysqli_real_escape_string($conn, $sheet->getCellByColumnAndRow(31, $i)->getValue());
         $monthly_visitor = mysqli_real_escape_string($conn, $sheet->getCellByColumnAndRow(32, $i)->getValue());
 
+        echo $hrms;
+
         if ($hotel_name != "") {
           $sql7 = "INSERT INTO hotel (hrms,ats,crm,erp,pos,rms,cm,pms,ibe,crs,hotel_name,website,country,street,city,hotel.state,zipcode,prefix,first_name,last_name,title,email,contact_number,number_of_rooms, hotel_class, adr, services,type_of_hotel,hotel.ownership,chain_name,facebook_url,alexa_rank,monthly_visitor) VALUES ('$hrms','$ats','$crm' ,'$erp','$pos','$rms','$cm','$pms','$ibe','$crs','$hotel_name','$website','$country','$street','$city','$state','$zipcode','$prefix','$first_name','$last_name','$title','$email','$contact_number','$number_of_rooms','$hotel_class','$adr','$services','$type_of_hotel','$ownership','$chain_name','$facebook_url','$alexa_rank','$monthly_visitor');";
 
@@ -821,10 +840,10 @@ if (isset($_POST["bulk_upload"])) {
           }
         }
       }
-      // echo $n . "   " . $count;
-      echo "<script>
-            window.location.href='../hotels.php';
-          </script>";
+      echo $n . "   " . $count;
+    //   echo "<script>
+    //         window.location.href='../hotel.php';
+    //       </script>";
     }
   } else {
     echo "<script>
@@ -883,7 +902,7 @@ $data_table .= '</tr>
 
 // download all data
 if (isset($_POST['download_data'])) {
-  $sql = "SELECT * FROM `hotel`";
+  $sql = "SELECT * FROM `hotel` where hotel.status = 1";
   $result = mysqli_query($conn, $sql);
   $sno = 0;
   while ($row = mysqli_fetch_assoc($result)) {

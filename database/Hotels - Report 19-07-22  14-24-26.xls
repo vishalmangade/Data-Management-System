@@ -1,0 +1,495 @@
+Connection was successful<table >
+      <thead>
+            <tr>
+            <th scope="col">Sr.No.</th>
+            <th scope="col">HRMS</th>
+            <th scope="col">ATS</th>
+            <th scope="col">CRM</th>
+            <th scope="col">ERP</th>
+            <th scope="col">POS</th>
+            <th scope="col">RMS</th>
+            <th scope="col">CM</th>
+            <th scope="col">PMS</th>
+            <th scope="col">IBE</th>
+            <th scope="col">CRS</th>
+            <th scope="col">Hotel Name</th>
+            <th scope="col">Website</th>
+            <th scope="col">street</th>
+            <th scope="col">City</th>
+            <th scope="col">State/Province</th>
+            <th scope="col">Zipcode</th>
+            <th scope="col">country</th>
+            <th scope="col">Prefix</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Number of Rooms</th>
+            <th scope="col">Hotel Class</th>
+            <th scope="col">ADR</th>
+            <th scope="col">Services</th>
+            <th scope="col">Type of Hotel</th>
+            <th scope="col">Onwership</th>
+            <th scope="col">Chain Name</th>
+            <th scope="col">Facebook URL</th>
+            <th scope="col">Alexa Rank</th>
+            <th scope="col">Monthly Visitors</th><th colspan="3" scope="col">Delete These Columns</th></tr>
+      </thead>
+        <tbody><tr>
+            <th scope="row">1</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>IDeas</td>
+            <td>Choiceadvantage</td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td>Amadeus</td>
+            <td>Corinthia Hotel London</td>
+            <td> <a href="http://corinthia.com " target="_blank">corinthia.com</a></td>
+            <td>Whitehall Pl, Westminster</td>
+            <td>London</td>
+            <td></td>
+            <td>SW1A 2BD</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Matthew</td>
+            <td>Dixon</td>
+            <td>General Manager</td>
+            <td>matthew.dixon@corinthia.com</td>
+            <td>44 20-7930-8181</td>
+            <td>294</td>
+            <td>5</td>
+            <td>US$ 83 - US$ 141</td>
+            <td>Meeting Rooms</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="16">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="16">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="16">Delete</button></td>
+          </tr><tr>
+            <th scope="row">2</th>
+            <td>Opera PMS</td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td></td>
+            <td>Skytouch Technology</td>
+            <td></td>
+            <td>Choiceadvantage</td>
+            <td>Sarova Hotels Ltd</td>
+            <td> <a href="http://sarova.com " target="_blank">sarova.com</a></td>
+            <td>11 Thurloe Cl, Kensington</td>
+            <td>London</td>
+            <td></td>
+            <td>SW7 2RS</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Karl</td>
+            <td>Wilson</td>
+            <td>General Manager</td>
+            <td>kwilson@sarova.com</td>
+            <td>44 20 7589 5151</td>
+            <td>194</td>
+            <td>4</td>
+            <td>US$ 74 - US$ 140</td>
+            <td>Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="32">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="32">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="32">Delete</button></td>
+          </tr><tr>
+            <th scope="row">3</th>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td></td>
+            <td>Skytouch Technology</td>
+            <td></td>
+            <td>Choiceadvantage</td>
+            <td>Shangri-La Hotel, At The Shard, London</td>
+            <td> <a href="http://shangri-la.com " target="_blank">shangri-la.com</a></td>
+            <td>31 St Thomas St</td>
+            <td>London</td>
+            <td></td>
+            <td>SE1 9QU</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Betty</td>
+            <td>Lau</td>
+            <td>Director of Sales and Marketing</td>
+            <td>betty.lau@shangri-la.com</td>
+            <td>44 20 7234 8000</td>
+            <td>202</td>
+            <td>5</td>
+            <td>US$ 83 - US$ 141</td>
+            <td>Meeting Rooms</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="33">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="33">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="33">Delete</button></td>
+          </tr><tr>
+            <th scope="row">4</th>
+            <td></td>
+            <td></td>
+            <td>Cendyn</td>
+            <td></td>
+            <td>Micros</td>
+            <td>One Yield</td>
+            <td>Choiceadvantage</td>
+            <td>Opera</td>
+            <td></td>
+            <td>MARSHA</td>
+            <td>The Lodge at Jackson Hole</td>
+            <td> <a href="http://lodgeatjh.com " target="_blank">lodgeatjh.com</a></td>
+            <td>80 Scott Ln</td>
+            <td>Jackson</td>
+            <td>WY</td>
+            <td>83002</td>
+            <td>United States</td>
+            <td></td>
+            <td>Trey</td>
+            <td>Millard</td>
+            <td>Manager</td>
+            <td>trey@lodgeatjh.com</td>
+            <td>1 307-739-9703</td>
+            <td>141</td>
+            <td>5</td>
+            <td>US$ 120 - US$ 234</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="48">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="48">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="48">Delete</button></td>
+          </tr><tr>
+            <th scope="row">5</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td>Zoho CRM</td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td>Choiceadvantage</td>
+            <td>Snapshot</td>
+            <td></td>
+            <td>OnQ</td>
+            <td>Azimut Hotel Murmansk</td>
+            <td> <a href="http://azimuthotels.com/Russia/azimut-hotel-murmansk/ " target="_blank">azimuthotels.com/Russia/azimut-hotel-murmansk/</a></td>
+            <td>Prospekt Lenina, 82</td>
+            <td>Murmansk</td>
+            <td></td>
+            <td>183038</td>
+            <td>Russia</td>
+            <td></td>
+            <td>Andrew</td>
+            <td>Sakin</td>
+            <td>General Manager</td>
+            <td>asakin@azimuthotels.com</td>
+            <td>7 815 255-03-50</td>
+            <td>36</td>
+            <td>4</td>
+            <td>US$ 76 - US$ 208</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="68">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="68">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="68">Delete</button></td>
+          </tr><tr>
+            <th scope="row">6</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td>Agile CRM</td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td>Choiceadvantage</td>
+            <td>Snapshot</td>
+            <td></td>
+            <td>OnQ</td>
+            <td>Azimut Hotel Nizhny Novgorod</td>
+            <td> <a href="http://azimuthotels.com/Russia/azimut-hotel-nizhny-novgorod/ " target="_blank">azimuthotels.com/Russia/azimut-hotel-nizhny-novgorod/</a></td>
+            <td>Ulitsa Zalomova, 2</td>
+            <td>Nizhny Novgorod Oblast</td>
+            <td></td>
+            <td>603109</td>
+            <td>Russia</td>
+            <td></td>
+            <td>Olga</td>
+            <td>Bruns</td>
+            <td>General Manager</td>
+            <td>obruns@azimuthotels.com</td>
+            <td>7 831 461-92-42</td>
+            <td>191</td>
+            <td>5</td>
+            <td>US$ 121 - US$ 301</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="69">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="69">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="69">Delete</button></td>
+          </tr><tr>
+            <th scope="row">7</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>IDeas</td>
+            <td>Choiceadvantage</td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td>Amadeus</td>
+            <td>Corinthia Hotel London</td>
+            <td> <a href="http://corinthia.com " target="_blank">corinthia.com</a></td>
+            <td>Whitehall Pl, Westminster</td>
+            <td>London</td>
+            <td></td>
+            <td>SW1A 2BD</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Matthew</td>
+            <td>Dixon</td>
+            <td>General Manager</td>
+            <td>matthew.dixon@corinthia.com</td>
+            <td>44 20-7930-8181</td>
+            <td>294</td>
+            <td>5</td>
+            <td>US$ 83 - US$ 141</td>
+            <td>Meeting Rooms</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="87">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="87">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="87">Delete</button></td>
+          </tr><tr>
+            <th scope="row">8</th>
+            <td>Opera PMS</td>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td></td>
+            <td>Skytouch Technology</td>
+            <td></td>
+            <td>Choiceadvantage</td>
+            <td>Sarova Hotels Ltd</td>
+            <td> <a href="http://sarova.com " target="_blank">sarova.com</a></td>
+            <td>11 Thurloe Cl, Kensington</td>
+            <td>London</td>
+            <td></td>
+            <td>SW7 2RS</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Karl</td>
+            <td>Wilson</td>
+            <td>General Manager</td>
+            <td>kwilson@sarova.com</td>
+            <td>44 20 7589 5151</td>
+            <td>194</td>
+            <td>4</td>
+            <td>US$ 74 - US$ 140</td>
+            <td>Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="103">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="103">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="103">Delete</button></td>
+          </tr><tr>
+            <th scope="row">9</th>
+            <td>Opera PMS</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td></td>
+            <td>Skytouch Technology</td>
+            <td></td>
+            <td>Choiceadvantage</td>
+            <td>Shangri-La Hotel, At The Shard, London</td>
+            <td> <a href="http://shangri-la.com " target="_blank">shangri-la.com</a></td>
+            <td>31 St Thomas St</td>
+            <td>London</td>
+            <td></td>
+            <td>SE1 9QU</td>
+            <td>United Kingdom</td>
+            <td></td>
+            <td>Betty</td>
+            <td>Lau</td>
+            <td>Director of Sales and Marketing</td>
+            <td>betty.lau@shangri-la.com</td>
+            <td>44 20 7234 8000</td>
+            <td>202</td>
+            <td>5</td>
+            <td>US$ 83 - US$ 141</td>
+            <td>Meeting Rooms</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="104">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="104">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="104">Delete</button></td>
+          </tr><tr>
+            <th scope="row">10</th>
+            <td></td>
+            <td></td>
+            <td>Cendyn</td>
+            <td></td>
+            <td>Micros</td>
+            <td>One Yield</td>
+            <td>Choiceadvantage</td>
+            <td>Opera</td>
+            <td></td>
+            <td>MARSHA</td>
+            <td>The Lodge at Jackson Hole</td>
+            <td> <a href="http://lodgeatjh.com " target="_blank">lodgeatjh.com</a></td>
+            <td>80 Scott Ln</td>
+            <td>Jackson</td>
+            <td>WY</td>
+            <td>83002</td>
+            <td>United States</td>
+            <td></td>
+            <td>Trey</td>
+            <td>Millard</td>
+            <td>Manager</td>
+            <td>trey@lodgeatjh.com</td>
+            <td>1 307-739-9703</td>
+            <td>141</td>
+            <td>5</td>
+            <td>US$ 120 - US$ 234</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="119">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="119">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="119">Delete</button></td>
+          </tr><tr>
+            <th scope="row">11</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td>Zoho CRM</td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td>Choiceadvantage</td>
+            <td>Snapshot</td>
+            <td></td>
+            <td>OnQ</td>
+            <td>Azimut Hotel Murmansk</td>
+            <td> <a href="http://azimuthotels.com/Russia/azimut-hotel-murmansk/ " target="_blank">azimuthotels.com/Russia/azimut-hotel-murmansk/</a></td>
+            <td>Prospekt Lenina, 82</td>
+            <td>Murmansk</td>
+            <td></td>
+            <td>183038</td>
+            <td>Russia</td>
+            <td></td>
+            <td>Andrew</td>
+            <td>Sakin</td>
+            <td>General Manager</td>
+            <td>asakin@azimuthotels.com</td>
+            <td>7 815 255-03-50</td>
+            <td>36</td>
+            <td>4</td>
+            <td>US$ 76 - US$ 208</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="139">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="139">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="139">Delete</button></td>
+          </tr><tr>
+            <th scope="row">12</th>
+            <td></td>
+            <td>Opera PMS</td>
+            <td>Agile CRM</td>
+            <td></td>
+            <td>Micros</td>
+            <td>Ideas</td>
+            <td>Choiceadvantage</td>
+            <td>Snapshot</td>
+            <td></td>
+            <td>OnQ</td>
+            <td>Azimut Hotel Nizhny Novgorod</td>
+            <td> <a href="http://azimuthotels.com/Russia/azimut-hotel-nizhny-novgorod/ " target="_blank">azimuthotels.com/Russia/azimut-hotel-nizhny-novgorod/</a></td>
+            <td>Ulitsa Zalomova, 2</td>
+            <td>Nizhny Novgorod Oblast</td>
+            <td></td>
+            <td>603109</td>
+            <td>Russia</td>
+            <td></td>
+            <td>Olga</td>
+            <td>Bruns</td>
+            <td>General Manager</td>
+            <td>obruns@azimuthotels.com</td>
+            <td>7 831 461-92-42</td>
+            <td>191</td>
+            <td>5</td>
+            <td>US$ 121 - US$ 301</td>
+            <td>Restaurant &amp; Meeting Room</td>
+            <td>Chain Hotel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button type="button" class="add_person-btn btn btn-sm btn-success p-1" data-eid="140">Add Person</button></td>
+            <td><button type="button" class="edit-btn btn btn-sm btn-info p-1" data-eid="140">Update</button></td>
+            <td><button type="button" class="delete-btn btn btn-sm btn-danger p-1" data-id="140">Delete</button></td>
+          </tr>

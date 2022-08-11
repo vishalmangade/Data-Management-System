@@ -12,7 +12,7 @@
     <div id="country_option" class="mt-2" style="display:none ;">
         <ul class="list-group ">
             <?php
-            $sql = "SELECT DISTINCT country FROM hotel ORDER BY country";
+            $sql = "SELECT DISTINCT country FROM hotel where status = 1 ORDER BY country";
             $result = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "
@@ -439,7 +439,7 @@
 </div>
 
 <div class="d-grid gap-2">
-    <a href="hotels.php" id="clear_filter" class=" btn" style="font-weight: bold;font-style:italic;color:blue">Clear Filters</a>
+    <a href="data.php" id="clear_filter" class=" btn" style="font-weight: bold;font-style:italic;color:blue">Clear Filters</a>
 </div>
 
 <div class="d-grid gap-2">
@@ -450,14 +450,18 @@
     <a id="upload-btn" class=" btn" style="font-weight: bold;font-style:italic;color:blue">Upload Bulk Data</a>
 </div>
 
-
+<?php 
+ if($_SESSION['title'] == "administrator")
+ echo '
 <div class="d-grid gap-2">
     <a id="generate-report-btn" class=" btn" style="font-weight: bold;font-style:italic;color:blue;display:none">Generate Report</a>
 </div>
 
 <div class="d-grid gap-2">
     <a id="donload-data-btn" class=" btn" style="font-weight: bold;font-style:italic;color:blue">Download All Data</a>
-</div>
+</div>'
+
+?>
 
 
 <!-- ========================================================= -->

@@ -35,9 +35,9 @@ if (isset($_POST['permit'])) {
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['session_id'] = $session_id;
                     if ($_SESSION['title'] == "analyst") {
-                        header("location:analyst");
+                        header("location:data.php");
                     } else if ($_SESSION['title'] == "administrator") {
-                        header("location:admin");
+                        header("location:dashboard");
                     }
                 } else {
                     $msg = 4;
